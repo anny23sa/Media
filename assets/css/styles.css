@@ -12,9 +12,7 @@ body{
     min-height: 100%;
 }
 .grid-container >*{
-   /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.075);*/
     border-radius: 4px;
-    /*padding: 10px;*/
     text-align: center;
 }
 .grid-container{
@@ -30,23 +28,23 @@ body{
 }
 .header{
     grid-area: header;
-    background-color: aqua;
+    background-color: rgb(247, 177, 223);
 }
 .section{
     grid-area: section;
-    background-color: yellow;
+    background-color: rgb(245, 201, 234);
 }
 .sidebar{
     grid-area: sidebar;
-    background-color: orange;
+    background-color: rgb(252, 225, 246);
 }
 .main{
     grid-area: main;
-    background-color: red;
+    background-color: rgb(245, 201, 234);
 }
 .footer{
     grid-area: footer;
-    background-color: green;
+    background-color: rgb(247, 177, 223) ;
 }
 
 .logo{
@@ -105,7 +103,7 @@ body{
 @media screen and (min-width: 576px) {
     .grid-container{
         display: grid;
-        background-color: blue;
+        background-color: aliceblue;
         grid-template-areas:
         "header sidebar"
         "header main"
@@ -137,6 +135,7 @@ body{
         align-items: end;
     }
     .main{
+        box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.075);
         grid-template-rows: repeat (4,1fr)
     }
     .footer-text-center h6{
@@ -144,4 +143,4 @@ body{
         flex-direction: column;
         
     }
-}
+} 
