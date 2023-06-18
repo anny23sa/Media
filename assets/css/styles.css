@@ -3,19 +3,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;
-   /* min-height: 100%;*/
-    
-   
-    
 }
-.grid-container >*{
+
+/*.grid-container >*{
     border-radius: 4px;
     text-align: center;
-}
+}*/
 .grid-container{
     display: grid;
     grid-template-areas: 
@@ -31,6 +26,7 @@ body{
 .header{
     grid-area: header;
     background-color: rgb(165, 245, 158);
+    width: 400px;
 }
 .section{
     grid-area: section;
@@ -131,6 +127,14 @@ body{
         display: flex;
         flex-direction: column;
         margin: 0;
+    }
+    .grid-container-header-menu{
+        display: flex;
+        justify-content: start;
+        margin: 40px;
+    }
+    .logo{
+        justify-content: flex-start;
     }
     .menu_item{
         display: flex;
