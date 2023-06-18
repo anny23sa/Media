@@ -1,6 +1,4 @@
-.html{
-    height: 100%;
-}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,6 +8,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     min-height: 100%;
+    
 }
 .grid-container >*{
     border-radius: 4px;
@@ -25,6 +24,7 @@ body{
     "footer";
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 1fr 6,5fr 1fr;
+    
 }
 .header{
     grid-area: header;
@@ -97,6 +97,7 @@ body{
     align-items: center;
     border-radius: 20px;
     align-content: space-evenly;
+    width: 350px;
 }
 .card-img-top{
     height: 320px;
