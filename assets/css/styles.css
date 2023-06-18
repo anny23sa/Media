@@ -15,36 +15,36 @@ body{
     border-radius: 4px;
     text-align: center;
 }
+.header{
+    grid-area: header;
+    background-color: aqua;
+}
+.section{
+    grid-area: section;
+    background-color: yellow;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: orange;
+}
+.main{
+    grid-area: main;
+    background-color: red;
+}
+.footer{
+    grid-area: footer;
+    background-color: green;
+}
+
 .grid-container{
     display: grid;
     grid-template-areas: 
     "header"
     "sidebar"
     "main"
-    "section" 
     "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 6,5fr auto auto;
-}
-.header{
-    grid-area: header;
-    background-color: rgb(247, 177, 223);
-}
-.section{
-    grid-area: section;
-    background-color: rgb(245, 201, 234);
-}
-.sidebar{
-    grid-area: sidebar;
-    background-color: rgb(252, 225, 246);
-}
-.main{
-    grid-area: main;
-    background-color: rgb(245, 201, 234);
-}
-.footer{
-    grid-area: footer;
-    background-color: rgb(247, 177, 223) ;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 1fr 6,5fr 1fr;
 }
 
 .logo{
@@ -100,16 +100,17 @@ body{
 }
 
 
-@media screen and (min-width: 576px) {
+
+
+@media (min-width: 576px) {
     .grid-container{
         display: grid;
-        background-color: aliceblue;
+        background-color: blue;
+        grid-template-columns: 20% 80%;
         grid-template-areas:
         "header sidebar"
         "header main"
-        "header main"
-        "footer section";
-        grid-template-columns: 20% 80%;
+        "footer section"
     }
     .grid-container-header-menu{
         display: flex;
@@ -127,20 +128,19 @@ body{
         font-size: 14px;
         padding-top: 40%;
     }
-    .sidebar{
-        height: fit-content;
-    }
-    .pag{
-        display: flex;
-        align-items: end;
-    }
     .main{
-        box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.075);
-        grid-template-rows: repeat (4,1fr)
+        display: grid;
+        padding: 5px;
     }
-    .footer-text-center h6{
-        display: flex;
-        flex-direction: column;
-        
+       
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-size: cover;
+       
+        overflow-y: hidden;
     }
-} 
+    .img .card-img-top{
+        padding: 5px;
+    }
+}
