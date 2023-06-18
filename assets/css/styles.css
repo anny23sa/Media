@@ -25,24 +25,24 @@
 }
 .header{
     grid-area: header;
-    background-color: rgb(165, 245, 158);
+    background-color: rgb(247, 203, 248);
     width: 400px;
 }
 .section{
     grid-area: section;
-    background-color: yellow;
+    background-color: rgb(218, 155, 218);
 }
 .sidebar{
     grid-area: sidebar;
-    background-color: orange;
+    background-color: rgb(240, 175, 226);
 }
 .main{
     grid-area: main;
-    background-color: red;
+    background-color: rgb(241, 165, 212);
 }
 .footer{
     grid-area: footer;
-    background-color: green;
+    background-color: rgb(248, 138, 248);
 }
 
 .grid-container{
@@ -115,7 +115,7 @@
 @media (min-width: 576px) {
     .grid-container{
         display: grid;
-        background-color: blue;
+        background-color: rgb(247, 190, 244);
         grid-template-columns: 20% 80%;
         grid-template-rows: 15% 80% 10%;
         grid-template-areas:
