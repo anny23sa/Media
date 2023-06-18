@@ -22,7 +22,7 @@ body{
     "main"
     "section"
     "footer";
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 6,5fr 1fr;
     
 }
